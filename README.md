@@ -7,60 +7,38 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Sobre 
+- Este é um simples projeto CRUD (Create, Read, Update e Delete), onde o foco é um TODO, um tipo de "lista de tarefas". Primeiramente, o usuário precisa se logar, se já possuir conta, se não, precisa criar uma conta e se logar logo em seguida. Logo depois de logado, o software redirecionará o usuário para a tela principal, a qual possui apenas um "input", onde será digita a tarefa e logo em seguida ela inserida na lista de tarefas. As funções possíveis ao se fazer após inserir uma tarefa, é marcá-la como realizada no checkbox do lado esquerdo, editar a tarefa e/ou deletar a mesma. Na parte inferior há duas abas, onde é possível ver separadamente as atividades ativas e que ainda precisam ser realizadas. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Neste projeto utilizei as seguintes ferramentas: 
+    - Laravel
+    - PHP
+    - Ajax
+    - Postgres
+    - Jquery UI
+    - Javascript
+    - Bootstrap
+    - CSS
+    - HTML
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Acesso Local
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Para acessar o projeto localmente: 
+    1. Clonar o projeto através do git.
+        1. Executar o seguinte comando no terminal no diretório de preferência: git clone https://github.com/chrystianruan/todos-esig.git 
+    1. Criar um banco de dados Postgres através de linha de comando no terminal, ou em um gerenciador de banco de dados Postgres (sugestão: pgAdmin4)
+    1. Alterar o arquivo .env.example para .env
+    1. Alterar as variáveis do banco de dados no arquivo .env, como solicitado a seguir:
+        - DB_CONNECTION=pgsql
+        - DB_HOST=[ HOST_DO_BD] (normalmente é: 127.0.0.1)
+        - DB_PORT=[ PORTA_DO_BD] (normalmente é: 5432)
+        - DB_DATABASE=[ NOME_DO_BD ]
+        - DB_USERNAME=[ USERNAME_DO_BD] (normalmente é: "postgres")
+        - DB_PASSWORD=[ SENHA_DO_BD]
+    1. Executar comando ```php artisan migrate``` para rodar as migrations no banco de dados.
+    1. Executar comando ```php artisan serve``` no terminal do diretório do projeto.
+    1. Acessar o link fornecido (geralmente é: http://127.0.0.1:8000) em um navegador de sua preferência.
 
-## Learning Laravel
+## Acesso remoto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    1. Acesse o link: https://todos-esig-production.up.railway.app

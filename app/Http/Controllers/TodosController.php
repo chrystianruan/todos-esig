@@ -23,11 +23,6 @@ class TodosController extends Controller
     }
 
     public function newTodo(Request $request) {
-        $request->validate([
-            'name' => 'required'
-        ], [
-            'name.required' => 'Campo vazio'
-        ]);
         $todo = new Todo;
         $todo->name = $request->name;
         $todo->realized = 0;

@@ -37,6 +37,8 @@
 
             <button type="submit" class="btn btn-primary">Cadastrar-se</button>
           </form>
+          <hr>
+          <p>Já possui login? <a href="/"> Acessar Login </a> </p>
     </div>
 
 

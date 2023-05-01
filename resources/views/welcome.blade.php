@@ -31,6 +31,8 @@
 
             <button type="submit" class="btn btn-primary">Conectar-se</button>
           </form>
+          <hr>
+          <p>Ainda não possui login? <a href="/register"> Cadastrar-se </a> </p>
     </div>
 
 

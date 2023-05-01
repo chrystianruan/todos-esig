@@ -111,6 +111,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="/js/todo.js"></script>
+    <script>
+      let spanIcon = document.getElementsByClassName("span-icon edit");
+      for (let i = 0; i < spanIcon.length; i++) {
+        spanIcon[i].addEventListener('click', function() {
+          let idSpan = spanIcon[i].id;
+          let id = idSpan.replace('span-', '');
+          let editInputName = document.getElementById("edit-input-name");
+          let editForm = document.getElementById("edit-form");
+            $.ajax({
+              type: 'GET',
+              url: '{{url('/show/todo/')}}/'+id,
+              dataType: 'json',
+              success: dados => {
+                  modal.style.display = "block";
+                  editInputName.value = dados.name;
+                  editForm.action = "/update/todo/"+id;
+              }
+            
+            }) 
+          });
+      }
+
+    </script>
     
 </body>
 </html>
