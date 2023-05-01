@@ -32,3 +32,4 @@ Route::put('/update/realized/todo/{id}', [TodosController::class, 'updateRealize
 Route::get('/show/todo/{id}', [TodosController::class, 'showTodo']);
 Route::put('/update/todo/{id}', [TodosController::class, 'updateTodo']);
 Route::delete('/delete/todo/{id}', [TodosController::class, 'deleteTodo']);
+Route::post('/logout', [UserController::class, 'logout']);

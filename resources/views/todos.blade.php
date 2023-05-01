@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/todo.css" media="screen" />
 </head>
 <body class="p-3 m-0 border-0 bd-example bd-example-row">
-
+  <form action="/logout" method="POST">@csrf <button class="btn btn-danger"> Sair </button></form>
     <div class="container">
       
         <div class="container text-center">
@@ -85,6 +85,7 @@
           </div>
            
           </div>
+
          
     </div>
 
@@ -108,6 +109,7 @@
           </form>
         </div>
       </div>
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
