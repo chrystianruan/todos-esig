@@ -1,0 +1,43 @@
+.container.text-center {
+    background-color: #cccccc49;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+}
+.list-group-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 3px;
+    margin: auto 10px;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+}
+.span-icon {
+    cursor: pointer;
+    font-size: 1.3em;
+    margin: auto 3px;
+}
+
+.tabs {
+    background: none;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+   
+}
+
+
+
