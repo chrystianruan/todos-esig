@@ -20,7 +20,11 @@
           <hr>
           <form action="/new/todo" method="POST" id="form-input">
             @csrf
-            <input class="form-control" id="input" required name="name" placeholder="Digite um todo...">
+            <div class="input-group mb-3">
+              <input class="form-control" id="input" required name="name" placeholder="Digite um todo...">
+              <button class="input-group-text"><i class="fa-solid fa-calendar-check fa-beat"></i></button>
+            </div>
+            
           </form>
           <ul class="list-group list-group-light" id="list">
             @if($allTodos->count() > 0)
